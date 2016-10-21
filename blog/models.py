@@ -30,7 +30,6 @@ class Blog(models.Model):
     category = models.ForeignKey(Category, verbose_name='分类')
     tags = models.ManyToManyField(Tag, verbose_name='标签')
  
- 
 class Comment(models.Model):
     """
     评论
@@ -43,8 +42,6 @@ class Comment(models.Model):
     content = models.CharField('内容', max_length=140)
  
     created = models.DateTimeField('发布时间', auto_now_add=True)
-
-
 
 
 

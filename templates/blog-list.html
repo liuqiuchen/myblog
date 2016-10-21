@@ -24,7 +24,7 @@
 {% for blog in blogs %}
     <div class="blog">
         <div class="title">
-            <a href="#"><h2>{{ blog.title }}</h2></a>
+            <a href="{% url 'blog_get_detail' blog.id %}" target="_blank"><h2>{{ blog.title }}</h2></a>
         </div>
         <div class="info">
             <span class="category" style="color: #ff9900;">{{ blog.category.name }}</span>
